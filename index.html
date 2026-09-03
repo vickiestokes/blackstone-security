@@ -79,6 +79,14 @@
     max-width:52ch;
     margin:0 0 28px;
   }
+  .hero h2.book-title{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-size:clamp(32px,4vw,46px);
+    line-height:1.1;
+    margin:0 0 20px;
+    text-wrap:balance;
+  }
   .badge{
     display:inline-block;
     font-size:13px;
@@ -112,10 +120,14 @@
     gap:24px;
   }
   .book{
+    display:block;
+    text-decoration:none;
     padding:22px;
     border:1px solid var(--line);
     border-radius:6px;
+    transition:border-color .15s ease;
   }
+  a.book:hover{border-color:var(--amber);}
   .book .num{
     font-family:'Work Sans', sans-serif;
     font-size:12px;
@@ -160,6 +172,7 @@
     <div class="brand">Blackstone Security</div>
     <nav>
       <a href="#book-one">Liam</a>
+      <a href="#book-two">Levi</a>
       <a href="#series">The Series</a>
       <a href="#author">About</a>
     </nav>
@@ -188,13 +201,35 @@
   </div>
 </section>
 
+<section class="hero" id="book-two">
+  <div class="wrap">
+    <img src="assets/levi-cover.jpg" alt="Levi — Blackstone Security, Book Two cover">
+    <div>
+      <p class="eyebrow">Blackstone Security · Book Two</p>
+      <h2 class="book-title">The ghost had a partner.</h2>
+      <p class="lede">She exposes secrets for a living. He's spent his life keeping them. The ghost hunting them both never saw either one coming.</p>
+      <span class="badge">Levi · Book Two · Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<section class="blurb">
+  <div class="wrap">
+    <h2>Levi — Book Two</h2>
+    <p>Investigative journalist Quinn Sutherland made her name doing the impossible: mapping a criminal no one could prove existed. Her reporting cleared a murdered man's name and earned her an invitation to a Blackstone wedding — along with one dance with the quiet second brother she can't stop thinking about, and a loose thread she can't put down. Because the ghost who built the Vale conspiracy had a partner. And her byline just told him she can see his shape.</p>
+    <p>Levi Blackstone is the steady one. The anchor. The man who takes the 3 a.m. calls so his family never has to. When Quinn's source vanishes, her career implodes in a single morning, and she discovers her own home has been silently owned for months, Levi drives ninety miles in seventy-eight minutes — and negotiates the most stubborn woman in Texas onto the ranch not as a protectee, but as a partner.</p>
+    <p>Their enemy doesn't send threats. He doesn't make demands. He buys the pipes — records, licenses, headlines — and rewrites the past itself, building a world where the Blackstones were never heroes at all. To beat a man who owns the truth, Quinn will have to do the one thing she was born for and the one thing that terrifies her: trust her instincts, her found family, and the con-man father she's spent twenty years refusing to read.</p>
+    <p>A slow-burn, steamy romantic suspense featuring a guarded protector hero, a razor-sharp heroine, the best worst father in Texas, and a guaranteed happily-ever-after. No cliffhangers. All heart.</p>
+  </div>
+</section>
+
 <section class="series" id="series">
   <div class="wrap">
     <h2>The Series</h2>
     <p class="tag">Five siblings. Five battles. One family that always gets the names right.</p>
     <div class="book-list">
-      <div class="book"><div class="num">BOOK ONE</div><h3>Liam</h3><p>A con.</p></div>
-      <div class="book"><div class="num">BOOK TWO</div><h3>Levi</h3><p>A paper war.</p></div>
+      <a class="book" href="#book-one"><div class="num">BOOK ONE</div><h3>Liam</h3><p>A con.</p></a>
+      <a class="book" href="#book-two"><div class="num">BOOK TWO</div><h3>Levi</h3><p>A paper war.</p></a>
       <div class="book"><div class="num">BOOK THREE</div><h3>Landon</h3><p>A corrupt institution.</p></div>
       <div class="book"><div class="num">BOOK FOUR</div><h3>Logan</h3><p>A machine hidden in mercy.</p></div>
       <div class="book"><div class="num">BOOK FIVE</div><h3>Lily</h3><p>The market behind them all.</p></div>
